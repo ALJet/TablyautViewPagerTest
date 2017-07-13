@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MyAdapter(getSupportFragmentManager(),this);
         viewPager.setAdapter(adapter);
 
+
+        //重点
         tabLayout.setupWithViewPager(viewPager);
         for (int i = 0;i < tabLayout.getTabCount();i++){
             TabLayout.Tab tab = tabLayout.getTabAt(i);
